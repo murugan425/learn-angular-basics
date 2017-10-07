@@ -1,0 +1,13 @@
+/* 
+    Styles can be applied from a css file using styleUrl 
+    or it can be defined internally in the component metadata using styles 
+    or declare it in the html template using <style></style> tag>
+*/
+
+.glyphicon-star {
+    color: green;
+}
+
+.glyphicon-star-empty {
+    color: red;
+}

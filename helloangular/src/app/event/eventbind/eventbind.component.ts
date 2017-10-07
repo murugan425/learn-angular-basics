@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-eventbind',
   template: `
-    <button [style.backgroundColor] = "'RED'">SAVE COLOR</button>
+  <div>
+    <button (click) = onSaveEvent()>SAVE ACTION</button>
+  </div>
   `,
   styleUrls: ['./eventbind.component.css']
 })
@@ -14,4 +16,5 @@ export class EventbindComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSaveEvent() { console.log('Save Action button is clicked')};
 }

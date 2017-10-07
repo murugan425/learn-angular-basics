@@ -1,0 +1,25 @@
+'{{courseAngular.title}}'  
+<app-favoritestar [favoriteflag]="courseAngular.favflag" (marked)="printChange($event)" (favoriteclick)="favoriteChange($event)"></app-favoritestar>
+'{{courseJava.title}}'  
+<app-favoritestar [favoriteflag]="courseJava.favflag"  (marked)="printChange($event)" (favoriteclick)="favoriteChange($event)"></app-favoritestar>
+
+<app-panel>
+    <ng-container class="headingtitle"><h2>Header/Title</h2></ng-container>
+    <ng-container class="bodycontent">
+        <h3>Body</h3> Some Text goes here..................,
+    </ng-container>
+</app-panel>
+
+<app-like [likes-count]="tweetByUser1.likeCount" [like-indicator]="tweetByUser1.isLiked" 
+    (like-click) = "likeChange($event)">
+    <ng-container class="tweetContent">
+        {{tweetByUser1.textContent}}
+    </ng-container>
+</app-like>
+<br/>
+<app-like [likes-count]="tweetByUser2.likeCount" [like-indicator]="tweetByUser2.isLiked" 
+    (like-click) = "likeChange($event)">
+    <ng-container class="tweetContent">
+        {{tweetByUser2.textContent}}
+    </ng-container>
+</app-like>
